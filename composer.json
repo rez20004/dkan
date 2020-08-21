@@ -28,7 +28,8 @@
         "getdkan/mock-chain": "1.1.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^7.5"
+        "phpunit/phpunit": "^7.5",
+        "zaporylie/composer-drupal-optimizations": "^1.1"
     },
     "repositories": [
         {
