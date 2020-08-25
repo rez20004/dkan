@@ -5,7 +5,7 @@ jobs:
       image: circleci/classic:latest
     environment:
       TEST_RESULTS: /tmp/test-results
-      DKTL_VERSION: "4.0.2"
+      DKTL_VERSION: "4.0.0"
     steps:
       - run:
           name: Setup composer config
