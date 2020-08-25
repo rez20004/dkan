@@ -50,15 +50,15 @@ jobs:
             echo "export PATH=~/dkan-tools/bin:$PATH" >> $BASH_ENV
             dktl dc up -d
       - run:
+          name: Install Drupal
+          command: sleep 10 && dktl install
+      - run:
           name: Run phpUnit tests
           command: dktl dkan:test-phpunit
       - run:
           name: Run CodeClimate Test Coverage Report
           command: |
             dktl dkan:test-phpunit-coverage $CC_TEST_REPORTER_ID
-      - run:
-          name: Install Drupal
-          command: sleep 10 && dktl install
       - run:
           name: Run DKAN dredd tests
           command: |
