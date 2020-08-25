@@ -28,7 +28,7 @@ jobs:
           name: Make DKAN
           command: |
             dktl make
-     - persist_to_workspace:
+      - persist_to_workspace:
           root: ~/
           paths:
             - dkan-tools
